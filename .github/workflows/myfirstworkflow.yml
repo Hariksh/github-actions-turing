@@ -10,6 +10,11 @@ jobs:
 
       - name: setup
         uses: actions/checkout@v4
-        
+
+      - name : setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: test function
         run: node start.js
