@@ -4,7 +4,7 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
-    defauls:
+    defaults:
       run:
         working-directory: backend
 
