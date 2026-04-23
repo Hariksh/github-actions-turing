@@ -9,9 +9,6 @@ jobs:
         working-directory: backend
 
     steps:
-      - name: Print Hello 
-        run: echo "Hello world"
-
       - name: setup
         uses: actions/checkout@v4
 
