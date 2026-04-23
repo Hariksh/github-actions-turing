@@ -9,6 +9,9 @@ jobs:
         working-directory: backend
 
     steps:
+      - name: Print Hello 
+        run: echo "Hello world"
+
       - name: setup
         uses: actions/checkout@v4
 
@@ -17,8 +20,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: test function
-        run: node start.js
       - name: install dependecis
         run: npm ci 
       
