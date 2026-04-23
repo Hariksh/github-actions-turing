@@ -8,9 +8,8 @@ jobs:
       - name: Print Hello 
         run: echo "Hello world"
 
-  add:
-    runs-on: ubuntu-latest
-    steps: 
-    - name: test function
-      run: node start.js
-      
+      - name: setup
+        uses: actions/checkout@v4
+        
+      - name: test function
+        run: node start.js
