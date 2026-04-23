@@ -4,6 +4,10 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
+    defauls:
+      run:
+        working-directory: backend
+
     steps:
       - name: Print Hello 
         run: echo "Hello world"
@@ -18,3 +22,8 @@ jobs:
 
       - name: test function
         run: node start.js
+      - name: install dependecis
+        run: npm ci 
+      
+      - name: run test
+        run: npm run test 
